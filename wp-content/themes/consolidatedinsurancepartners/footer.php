@@ -14,12 +14,20 @@
 </div><!-- #content -->
 
 <footer class="site-footer">
-	<a href="<?php get_permalink(); ?>"> <?php webname(); ?>
+<div class="topFoot">
+	<a href="http://ciptexas.com"> Consolidated Insurance Partners
 	</a>
 	, all rights reserved. &copy; 
 	<?php echo date("Y"); ?> 
-	<a href="http://creative.rainman.com/">Rainman Creative</a>
+	powered by <a href="http://creative.rainman.com/">Rainman Creative</a>
 </a>
+</div>
+<br />
+<div class="subFoot">
+<a href="/terms-of-use">Terms of Use</a>
+|
+<a href="/privacy-policy">Privacy Policy</a>
+</div>
 </footer>
 </div><!-- #page -->
 
