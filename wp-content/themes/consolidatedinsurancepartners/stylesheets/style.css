@@ -958,20 +958,41 @@ object {
 
 /* line 113, ../sass/style.scss */
 div#content {
-  background-image: "/CIPT/wp-content/themes/consolidatedinsurancepartners/Images" "parchment.jpg";
+  background-image: url("parchment.jpg");
+  color: #774b2c;
+  text-align: center;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
+.FullWidthTitle {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* line 124, ../sass/style.scss */
+.MainContent {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+}
+
+/* line 130, ../sass/style.scss */
+.col-md-5.logo {
+  display: flex;
+  max-height: 609px;
+}
+
+/* line 135, ../sass/style.scss */
 .col-md-12.menu {
   background-color: #717c44;
   height: 70px;
 }
-/* line 120, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 .col-md-12.menu a {
   color: #ffffff;
   font-size: large;
 }
-/* line 124, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .col-md-12.menu li {
   padding-top: 22px;
   padding-right: 4%;
@@ -980,36 +1001,42 @@ div#content {
   height: 70px;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .col-md-12.slider {
   max-height: 539px;
   overflow: hidden;
+  flex: 1;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 footer.site-footer {
   background-color: #302b28;
   height: 150px;
   border-top: solid 8px #b59a4b;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .topFoot {
   text-align: center;
   margin-top: 48px;
   color: #b59a4b;
 }
-/* line 148, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .topFoot a {
   color: #b59a4b;
 }
 
-/* line 153, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .subFoot {
   text-align: center;
   color: #ffffff;
 }
-/* line 156, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .subFoot a {
   color: #ffffff;
+}
+
+/* line 180, ../sass/style.scss */
+.FullWidthTitle {
+  font-size: 4em;
 }

@@ -111,7 +111,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 div#content {
-    background-image: "/CIPT/wp-content/themes/consolidatedinsurancepartners/Images" "parchment.jpg";
+    background-image: url("parchment.jpg");
+    color: #774b2c;
+    text-align: center;
+}
+
+.FullWidthTitle {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.MainContent {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.col-md-5.logo {
+    display: flex;
+    max-height: 609px;
 }
 
 .col-md-12.menu {
@@ -133,6 +151,7 @@ div#content {
 .col-md-12.slider {
     max-height: 539px;
     overflow: hidden;
+    flex: 1;
 }
 
 footer.site-footer {
@@ -156,4 +175,8 @@ footer.site-footer {
     a {
         color: #ffffff;
     }
+}
+
+.FullWidthTitle {
+    font-size: 4em;
 }
