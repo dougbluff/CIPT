@@ -964,35 +964,36 @@ div#content {
 }
 
 /* line 119, ../sass/style.scss */
+.col-md-6.Quarter,
 .FullWidthTitle {
   margin-left: 10%;
   margin-right: 10%;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .MainContent {
   margin-left: 10%;
   margin-right: 10%;
   text-align: left;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .col-md-5.logo {
   display: flex;
   max-height: 609px;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .col-md-12.menu {
   background-color: #717c44;
   height: 70px;
 }
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .col-md-12.menu a {
   color: #ffffff;
   font-size: large;
 }
-/* line 142, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .col-md-12.menu li {
   padding-top: 22px;
   padding-right: 4%;
@@ -1000,43 +1001,47 @@ div#content {
   border-right: 1px solid #576034;
   height: 70px;
 }
+/* line 150, ../sass/style.scss */
+.col-md-12.menu li:hover {
+  background-color: yellow;
+}
 
-/* line 151, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .col-md-12.slider {
   max-height: 539px;
   overflow: hidden;
   flex: 1;
 }
 
-/* line 157, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 footer.site-footer {
   background-color: #302b28;
   height: 150px;
   border-top: solid 8px #b59a4b;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .topFoot {
   text-align: center;
   margin-top: 48px;
   color: #b59a4b;
 }
-/* line 167, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .topFoot a {
   color: #b59a4b;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .subFoot {
   text-align: center;
   color: #ffffff;
 }
-/* line 175, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .subFoot a {
   color: #ffffff;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .FullWidthTitle {
   font-size: 4em;
 }

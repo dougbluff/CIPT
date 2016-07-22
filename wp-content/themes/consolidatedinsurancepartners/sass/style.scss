@@ -116,6 +116,7 @@ div#content {
     text-align: center;
 }
 
+.col-md-6.Quarter,
 .FullWidthTitle {
     margin-left: 10%;
     margin-right: 10%;
@@ -145,6 +146,9 @@ div#content {
         padding-left: 4%;
         border-right: 1px solid #576034;
         height: 70px;
+    }
+    li:hover {
+        background-color: yellow;
     }
 }
 
