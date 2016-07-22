@@ -21,4 +21,13 @@ function CPITexas_enqueue_styles() {
 
 }
 
+function webname()
+{
+	$fullsite = get_permalink();
+	$find = array( 'http://', 'https://', 'www.', '/', '.com', '.org', '.net' );
+	$replace = '';
+	$output = str_replace( $find, $replace, $fullsite );
+	echo ucfirst($output);
+}
+
 ?>
