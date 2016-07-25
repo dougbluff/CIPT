@@ -130,15 +130,17 @@ div#content {
 
 .col-md-5.logo {
     display: flex;
-    max-height: 609px;
+    max-height: 400px;
 }
 
 .col-md-12.menu {
     background-color: #717c44;
-    height: 70px;
+    height: 50px;
     a {
         color: #ffffff;
         font-size: large;
+        position: relative;
+        top: -15%;
     }
     li {
         padding-top: 22px;
@@ -148,7 +150,7 @@ div#content {
         height: 70px;
     }
     li:hover {
-        background-color: yellow;
+        background-color: #00FF00;
     }
 }
 
@@ -183,4 +185,9 @@ footer.site-footer {
 
 .FullWidthTitle {
     font-size: 4em;
+}
+
+.col-md-7.navSlider {
+    max-height: 400px;
+    overflow: hidden;
 }
