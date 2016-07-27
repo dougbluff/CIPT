@@ -28,19 +28,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+    ## Links
+    ## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
     ## Posts and pages
-	## Comments
+    ## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+    ## Captions
+    ## Galleries
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -105,13 +105,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "media/media";
 
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     padding-right: 0px !important;
     padding-left: 0px !important;
 }
 
 div#content {
-    background-image: url("parchment.jpg");
+    background-image: url("parchmentOld.jpg");
+    background-size: cover;
     color: #774b2c;
     text-align: center;
 }
@@ -126,6 +132,8 @@ div#content {
     margin-left: 10%;
     margin-right: 10%;
     text-align: left;
+    font-size: large;
+    padding-bottom: 40px;
 }
 
 .col-md-5.logo {
@@ -136,6 +144,7 @@ div#content {
 .col-md-12.menu {
     background-color: #717c44;
     height: 50px;
+    border-bottom: solid 1px #4a5422;
     a {
         color: #ffffff;
         font-size: large;
@@ -149,15 +158,11 @@ div#content {
         border-right: 1px solid #576034;
         height: 70px;
     }
-    li:hover {
-        background-color: #00FF00;
+    a:hover {
+        border: solid 1px #4a5422;
+        text-decoration: none;
+        margin: -1px;
     }
-}
-
-.col-md-12.slider {
-    max-height: 539px;
-    overflow: hidden;
-    flex: 1;
 }
 
 footer.site-footer {
@@ -184,10 +189,152 @@ footer.site-footer {
 }
 
 .FullWidthTitle {
-    font-size: 4em;
+    font-size: 3.9vw;
 }
 
-.col-md-7.navSlider {
-    max-height: 400px;
+.row.Head {
+    background-image: url("/CIPT/wp-content/uploads/2016/07/WoodBack-1.jpg");
+    background-size: cover;
+    height: 400px;
     overflow: hidden;
+    margin-right: 0px;
+    margin-left: 0px;
+    .logoStar {
+        img {
+            height: 15vw;
+            position: absolute;
+            top: 3vw;
+            left: 10vw;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1661px) and (max-device-width: 1824px) {
+    .row.Head {
+        .logoStar {
+            img {
+                top: 3.5vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1481px) and (max-device-width: 1660px) {
+    .row.Head {
+        .logoStar {
+            img {
+                top: 4vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1225px) and (max-device-width: 1480px) {
+    .row.Head {
+        .logoStar {
+            img {
+                top: 6vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1041px) and (max-device-width: 1224px) {
+    .row.Head {
+        .logoStar {
+            img {
+                top: 8vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1040px) {
+    .col-md-12.slider {
+        display: none;
+    }
+    .col-md-12.menu {
+        display: none;
+    }
+    .row.Head {
+        .logoStar {
+            img {
+                height: 28vw;
+                position: relative;
+                top: 17vw;
+                left: 30vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1px) and (max-device-width: 599px) {
+    .col-md-12.slider {
+        display: none;
+    }
+    .col-md-12.menu {
+        display: none;
+    }
+    .row.Head {
+        .logoStar {
+            img {
+                height: 40vw;
+                position: relative;
+                top: 17vw;
+                left: 20vw;
+            }
+        }
+    }
+}
+
+hr {
+    width: 80%;
+    border-top: 1px solid #b8ac9c !important;
+}
+
+.col-md-6.QuarterRight {
+    margin: 0;
+}
+
+.col-md-6.QuarterLeft {
+    margin: 0;
+    border-right: 1px solid #b8ac9c !important;
+}
+
+.colContent {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: large;
+}
+
+.SectionTitle {
+    font-size: 3.5vw;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.ColHead {
+    font-size: xx-large;
+}
+
+.subTitle {
+    text-align: left;
+    margin-left: 10%;
+    font-size: x-large;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.row.FancyRow {
+    display: -webkit-inline-box;
+}
+
+.largeFancy {
+    font-size: xx-large;
+}
+
+.smallFancy {
+    font-size: large;
+    position: relative;
+    top: 15px;
 }

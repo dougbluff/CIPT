@@ -27,19 +27,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+    ## Links
+    ## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
     ## Posts and pages
-	## Comments
+    ## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+    ## Captions
+    ## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -951,51 +951,61 @@ object {
 }
 
 /* line 108, ../sass/style.scss */
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* line 113, ../sass/style.scss */
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 div#content {
-  background-image: url("parchment.jpg");
+  background-image: url("parchmentOld.jpg");
+  background-size: cover;
   color: #774b2c;
   text-align: center;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .col-md-6.Quarter,
 .FullWidthTitle {
   margin-left: 10%;
   margin-right: 10%;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .MainContent {
   margin-left: 10%;
   margin-right: 10%;
   text-align: left;
+  font-size: large;
+  padding-bottom: 40px;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .col-md-5.logo {
   display: flex;
   max-height: 400px;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .col-md-12.menu {
   background-color: #717c44;
   height: 50px;
+  border-bottom: solid 1px #4a5422;
 }
-/* line 139, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .col-md-12.menu a {
   color: #ffffff;
   font-size: large;
   position: relative;
   top: -15%;
 }
-/* line 145, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .col-md-12.menu li {
   padding-top: 22px;
   padding-right: 4%;
@@ -1003,53 +1013,183 @@ div#content {
   border-right: 1px solid #576034;
   height: 70px;
 }
-/* line 152, ../sass/style.scss */
-.col-md-12.menu li:hover {
-  background-color: #00FF00;
+/* line 161, ../sass/style.scss */
+.col-md-12.menu a:hover {
+  border: solid 1px #4a5422;
+  text-decoration: none;
+  margin: -1px;
 }
 
-/* line 157, ../sass/style.scss */
-.col-md-12.slider {
-  max-height: 539px;
-  overflow: hidden;
-  flex: 1;
-}
-
-/* line 163, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 footer.site-footer {
   background-color: #302b28;
   height: 150px;
   border-top: solid 8px #b59a4b;
 }
 
-/* line 169, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .topFoot {
   text-align: center;
   margin-top: 48px;
   color: #b59a4b;
 }
-/* line 173, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .topFoot a {
   color: #b59a4b;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .subFoot {
   text-align: center;
   color: #ffffff;
 }
-/* line 181, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .subFoot a {
   color: #ffffff;
 }
 
-/* line 186, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .FullWidthTitle {
-  font-size: 4em;
+  font-size: 3.9vw;
 }
 
-/* line 190, ../sass/style.scss */
-.col-md-7.navSlider {
-  max-height: 400px;
+/* line 195, ../sass/style.scss */
+.row.Head {
+  background-image: url("/CIPT/wp-content/uploads/2016/07/WoodBack-1.jpg");
+  background-size: cover;
+  height: 400px;
   overflow: hidden;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+/* line 203, ../sass/style.scss */
+.row.Head .logoStar img {
+  height: 15vw;
+  position: absolute;
+  top: 3vw;
+  left: 10vw;
+}
+
+@media only screen and (min-device-width: 1661px) and (max-device-width: 1824px) {
+  /* line 215, ../sass/style.scss */
+  .row.Head .logoStar img {
+    top: 3.5vw;
+  }
+}
+@media only screen and (min-device-width: 1481px) and (max-device-width: 1660px) {
+  /* line 225, ../sass/style.scss */
+  .row.Head .logoStar img {
+    top: 4vw;
+  }
+}
+@media only screen and (min-device-width: 1225px) and (max-device-width: 1480px) {
+  /* line 235, ../sass/style.scss */
+  .row.Head .logoStar img {
+    top: 6vw;
+  }
+}
+@media only screen and (min-device-width: 1041px) and (max-device-width: 1224px) {
+  /* line 245, ../sass/style.scss */
+  .row.Head .logoStar img {
+    top: 8vw;
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 1040px) {
+  /* line 253, ../sass/style.scss */
+  .col-md-12.slider {
+    display: none;
+  }
+
+  /* line 256, ../sass/style.scss */
+  .col-md-12.menu {
+    display: none;
+  }
+
+  /* line 261, ../sass/style.scss */
+  .row.Head .logoStar img {
+    height: 28vw;
+    position: relative;
+    top: 17vw;
+    left: 30vw;
+  }
+}
+@media only screen and (min-device-width: 1px) and (max-device-width: 599px) {
+  /* line 272, ../sass/style.scss */
+  .col-md-12.slider {
+    display: none;
+  }
+
+  /* line 275, ../sass/style.scss */
+  .col-md-12.menu {
+    display: none;
+  }
+
+  /* line 280, ../sass/style.scss */
+  .row.Head .logoStar img {
+    height: 40vw;
+    position: relative;
+    top: 17vw;
+    left: 20vw;
+  }
+}
+/* line 290, ../sass/style.scss */
+hr {
+  width: 80%;
+  border-top: 1px solid #b8ac9c !important;
+}
+
+/* line 295, ../sass/style.scss */
+.col-md-6.QuarterRight {
+  margin: 0;
+}
+
+/* line 299, ../sass/style.scss */
+.col-md-6.QuarterLeft {
+  margin: 0;
+  border-right: 1px solid #b8ac9c !important;
+}
+
+/* line 304, ../sass/style.scss */
+.colContent {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: large;
+}
+
+/* line 310, ../sass/style.scss */
+.SectionTitle {
+  font-size: 3.5vw;
+  text-align: left;
+  margin-left: 10%;
+}
+
+/* line 316, ../sass/style.scss */
+.ColHead {
+  font-size: xx-large;
+}
+
+/* line 320, ../sass/style.scss */
+.subTitle {
+  text-align: left;
+  margin-left: 10%;
+  font-size: x-large;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+/* line 328, ../sass/style.scss */
+.row.FancyRow {
+  display: -webkit-inline-box;
+}
+
+/* line 332, ../sass/style.scss */
+.largeFancy {
+  font-size: xx-large;
+}
+
+/* line 336, ../sass/style.scss */
+.smallFancy {
+  font-size: large;
+  position: relative;
+  top: 15px;
 }

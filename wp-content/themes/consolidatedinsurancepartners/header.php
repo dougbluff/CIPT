@@ -25,9 +25,11 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'consolidatedinsurancepartners' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-		<div class="row">
+		<div class="row Head">
 			<div class="col-md-5 logo">
-				<img src="/CIPT/wp-content/themes/consolidatedinsurancepartners/Images/logo.png">
+				<div class="logoStar">
+					<img src="/CIPT/wp-content/uploads/2016/07/CIPStar-1.png">
+				</div>
 			</div>
 			<div class="col-md-7 navSlider">
 			<div class="col-md-12 menu">
